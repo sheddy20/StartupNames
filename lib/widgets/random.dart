@@ -50,13 +50,9 @@ class _RandomWordsState extends State<RandomWords> {
       appBar: AppBar(
         title: Text("StartUp Names"),
         centerTitle: true,
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          onPressed: () {},
-        ),
         actions: [
           IconButton(
-            icon: Icon(Icons.shopping_cart),
+            icon: Icon(Icons.list),
             onPressed: _pushSaved,
           ),
         ],

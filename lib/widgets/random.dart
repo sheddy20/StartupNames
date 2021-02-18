@@ -46,18 +46,20 @@ class _RandomWordsState extends State<RandomWords> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("StartUp Names"),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            icon: Icon(Icons.list),
-            onPressed: _pushSaved,
-          ),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("StartUp-Names"),
+          centerTitle: true,
+          actions: [
+            IconButton(
+              icon: Icon(Icons.list),
+              onPressed: _pushSaved,
+            ),
+          ],
+        ),
+        body: _buildSuggestion(),
       ),
-      body: _buildSuggestion(),
     );
   }
 

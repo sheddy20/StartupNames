@@ -59,6 +59,17 @@ class _RandomWordsState extends State<RandomWords> {
           ],
         ),
         body: _buildSuggestion(),
+        floatingActionButton: FloatingActionButton.extended(
+          onPressed: () {},
+          label: Text(
+            "SignOut",
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+          icon: Icon(Icons.person),
+          backgroundColor: Colors.deepOrange,
+        ),
       ),
     );
   }
